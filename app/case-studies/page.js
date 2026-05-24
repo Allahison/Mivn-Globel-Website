@@ -5,6 +5,13 @@ import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
 import ScrollReveal from '@/components/ScrollReveal';
 
+export const metadata = {
+  title: "Case Studies — Industries We Transform",
+  description: "Real results across law firms, wholesale, mobile phone importers, and e-commerce. See how Mivan Global Suite transforms business operations with proven systems.",
+  keywords: ["case studies", "digital transformation results", "e-commerce success", "law firm automation", "wholesale management results"],
+  openGraph: { title: "Case Studies — Mivan Global Suite", description: "Real systems delivering real outcomes across law firms, wholesale, mobile imports, and e-commerce.", url: "https://mivn-globel-website.vercel.app/case-studies" },
+};
+
 const useCases = [
   {
     industry: 'Law Firms',

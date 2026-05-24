@@ -5,6 +5,13 @@ import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
 import ScrollReveal from '@/components/ScrollReveal';
 
+export const metadata = {
+  title: "Custom Software Development — B2B Portals & Mobile Apps",
+  description: "Bespoke B2B ordering portals, inventory management systems, warranty platforms, business dashboards, and staff mobile apps built around your exact workflow.",
+  keywords: ["custom software development", "B2B portal development", "inventory management system", "mobile app development", "business dashboard", "custom ERP"],
+  openGraph: { title: "Custom Software Development — Mivan Global Suite", description: "Bespoke B2B portals, inventory systems, and mobile apps built for your exact workflow.", url: "https://mivn-globel-website.vercel.app/services/custom-development" },
+};
+
 const steps = [
   { num: '01', title: 'DISCOVERY & ARCHITECTURE', desc: 'We start by auditing your current friction points to create a technical specification. We define exactly what needs to be built to solve your specific business problem.' },
   { num: '02', title: 'AGILE DEVELOPMENT', desc: 'Our team builds your custom portal or app in 2-week sprints. This gives you regular visibility on progress and allows us to adapt features quickly if your needs change.' },

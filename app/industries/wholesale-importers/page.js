@@ -5,6 +5,13 @@ import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
 import ScrollReveal from '@/components/ScrollReveal';
 
+export const metadata = {
+  title: "Wholesale & Importer Digital Solutions — Inventory & Supply Chain",
+  description: "Real-time inventory management, automated purchase orders, supplier portals, and import logistics tools for wholesale businesses and importers.",
+  keywords: ["wholesale management software", "importer tools", "inventory management", "purchase order automation", "supplier portal", "supply chain software"],
+  openGraph: { title: "Wholesale & Importer Solutions — Mivan Global Suite", description: "Real-time inventory, automated POs, and supplier portals for wholesale businesses.", url: "https://mivn-globel-website.vercel.app/industries/wholesale-importers" },
+};
+
 const solutions = [
   { tag: 'INVENTORY', tagColor: 'bg-blue-100 text-blue-700', title: 'Inventory Management', desc: 'Real-time stock tracking across multiple warehouses with automated reorder alerts.', image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=75' },
   { tag: 'LOGISTICS', tagColor: 'bg-teal-100 text-teal-700', title: 'Import & Logistics', desc: 'Track shipments, manage customs documentation, and coordinate with suppliers seamlessly.', image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=75' },

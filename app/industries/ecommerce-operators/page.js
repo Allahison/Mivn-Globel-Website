@@ -5,6 +5,13 @@ import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
 import ScrollReveal from '@/components/ScrollReveal';
 
+export const metadata = {
+  title: "E-commerce Operator Solutions — Store Growth & Optimisation",
+  description: "Store conversion optimisation, performance marketing, inventory sync, review management, and email campaigns for e-commerce businesses.",
+  keywords: ["e-commerce operator", "store optimisation", "conversion rate optimisation", "performance marketing", "e-commerce growth", "online store management"],
+  openGraph: { title: "E-commerce Operator Solutions — Mivan Global Suite", description: "Store optimisation, performance marketing, and multi-channel management for online sellers.", url: "https://mivn-globel-website.vercel.app/industries/ecommerce-operators" },
+};
+
 const solutions = [
   { tag: 'OPTIMISATION', tagColor: 'bg-blue-100 text-blue-700', title: 'Store Optimisation', desc: 'Conversion rate optimisation, A/B testing, and UX improvements for maximum revenue per visitor.', image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=75' },
   { tag: 'MARKETING', tagColor: 'bg-orange-100 text-orange-700', title: 'Performance Marketing', desc: 'Facebook, Google, and TikTok ad campaigns managed by certified professionals with proven ROAS.', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=75' },

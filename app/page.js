@@ -6,6 +6,13 @@ import CTASection from '@/components/CTASection';
 import ScrollReveal from '@/components/ScrollReveal';
 import AnimatedCounter from '@/components/AnimatedCounter';
 
+export const metadata = {
+  title: "Mivan Global Suite — E-commerce Operations & Custom Software",
+  description: "Complete e-commerce management for Amazon, eBay & TikTok Shop. Custom software, B2B portals, and digital solutions for law firms, wholesalers, and importers.",
+  keywords: ["e-commerce management", "Amazon seller services", "eBay management", "TikTok Shop", "custom software", "B2B portal", "digital operations"],
+  openGraph: { title: "Mivan Global Suite — E-commerce Operations & Custom Software", description: "Complete e-commerce management for Amazon, eBay & TikTok Shop. Custom software and digital solutions for modern businesses.", url: "https://mivn-globel-website.vercel.app" },
+};
+
 const services = [
   {
     tag: 'OPERATIONS',

@@ -5,6 +5,13 @@ import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
 import ScrollReveal from '@/components/ScrollReveal';
 
+export const metadata = {
+  title: "Mobile Phone Importer Solutions — IMEI Tracking & Dealer Portal",
+  description: "IMEI-level tracking, import documentation, customs automation, dynamic pricing, and B2B dealer portals for mobile phone importers and distributors.",
+  keywords: ["mobile phone importer", "IMEI tracking", "phone import software", "dealer portal", "import documentation", "mobile phone distributor tools"],
+  openGraph: { title: "Mobile Phone Importer Solutions — Mivan Global Suite", description: "IMEI tracking, import compliance, and dealer portals for mobile phone importers.", url: "https://mivn-globel-website.vercel.app/industries/mobile-phone-importers" },
+};
+
 const solutions = [
   { tag: 'CATALOG', tagColor: 'bg-blue-100 text-blue-700', title: 'Product Catalog Management', desc: 'Manage thousands of SKUs across brands, models, variants, and specs effortlessly.', image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&q=75' },
   { tag: 'IMPORT', tagColor: 'bg-teal-100 text-teal-700', title: 'Import Documentation', desc: 'Automate customs declarations, HS codes, and duty calculation for all phone imports.', image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=75' },

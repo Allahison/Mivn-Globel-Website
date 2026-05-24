@@ -5,6 +5,13 @@ import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
 import ScrollReveal from '@/components/ScrollReveal';
 
+export const metadata = {
+  title: "About Us — Mivan Global Suite",
+  description: "Learn about Mivan Global Suite — we fix vendor fragmentation for ambitious SMEs. E-commerce, custom software, and digital transformation specialists.",
+  keywords: ["about Mivan Global", "digital operations company", "e-commerce specialists", "custom software team"],
+  openGraph: { title: "About Us — Mivan Global Suite", description: "We fix vendor fragmentation for ambitious SMEs. Meet the team behind digital transformation.", url: "https://mivn-globel-website.vercel.app/about" },
+};
+
 const steps = [
   { icon: '🔍', num: '01', title: 'AUDIT & GOALS', desc: 'We map your current processes, identify bottlenecks, and define clear KPI targets.' },
   { icon: '⚙️', num: '02', title: 'BUILD & INTEGRATE', desc: 'We configure the Suite, build custom tools, and integrate your existing data.' },

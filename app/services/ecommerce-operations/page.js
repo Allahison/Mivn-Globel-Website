@@ -5,6 +5,13 @@ import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
 import ScrollReveal from '@/components/ScrollReveal';
 
+export const metadata = {
+  title: "E-commerce Operations Management — Amazon, eBay & TikTok Shop",
+  description: "Complete management of Amazon, eBay & TikTok Shop. Listing optimisation, real-time inventory sync, customer support, dispatch performance, and strategic promotions.",
+  keywords: ["Amazon management", "eBay management", "TikTok Shop management", "e-commerce operations", "marketplace management", "listing optimisation", "inventory sync"],
+  openGraph: { title: "E-commerce Operations Management — Mivan Global Suite", description: "Complete Amazon, eBay & TikTok Shop management. We handle everything so you can scale.", url: "https://mivn-globel-website.vercel.app/services/ecommerce-operations" },
+};
+
 const highlights = [
   { num: '01', title: 'LISTING OPTIMISATION', desc: 'We create high-converting product pages with SEO-friendly titles, bullet points, and professional imagery ensuring maximum visibility across all channels.' },
   { num: '02', title: 'STOCK & DISPATCH SYNC', desc: 'Advanced logic prevents overselling and ensures 100% accurate dispatch performance to protect your account health and feedback score.' },

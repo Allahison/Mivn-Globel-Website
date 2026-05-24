@@ -5,6 +5,13 @@ import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
 import ScrollReveal from '@/components/ScrollReveal';
 
+export const metadata = {
+  title: "Digital Solutions for Law Firms — Client Portals & Automation",
+  description: "Automate client intake, case management, document workflows, and billing for law firms. Custom legal tech built to SRA/Bar Association compliance standards.",
+  keywords: ["law firm software", "legal practice management", "client intake automation", "case management system", "legal tech", "law firm digital transformation"],
+  openGraph: { title: "Digital Solutions for Law Firms — Mivan Global Suite", description: "Automate client intake, case management, and billing. Custom legal tech for modern law firms.", url: "https://mivn-globel-website.vercel.app/industries/law-firms" },
+};
+
 const highlights = [
   { num: '01', title: 'HIGH-VALUE CLIENT SYSTEMS', desc: 'Move beyond referrals. We implement automated lead generation systems that target high-net-worth individuals and corporate clients, ensuring a steady pipeline of qualified cases.' },
   { num: '02', title: 'PRACTICE AUTOMATION', desc: 'Eliminate billable hours wasted on admin. We automate document drafting, case filing workflows, and deadline reminders so your associates can focus on the law.' },
