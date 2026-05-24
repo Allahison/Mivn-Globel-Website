@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Mivan Global Suite — Digital Solutions for Modern Businesses",
-  description: "E-commerce operations and custom development services for law firms, wholesalers, importers, and online businesses.",
+  description: "E-commerce operations, custom development, and digital solutions for law firms, wholesalers, importers, and online businesses.",
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",
