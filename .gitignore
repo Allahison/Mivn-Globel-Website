@@ -19,6 +19,17 @@
 
 # production
 /build
+/dist
+
+# deployment artifacts
+/namecheap-deploy/
+/namecheap-standalone/
+/deploy/
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
 
 # misc
 .DS_Store
