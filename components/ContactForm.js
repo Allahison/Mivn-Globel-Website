@@ -30,6 +30,7 @@ export default function ContactForm() {
   const [form, setForm] = useState(initialForm);
   const [siteKey, setSiteKey] = useState('');
   const [configLoaded, setConfigLoaded] = useState(false);
+  const [captchaLoadError, setCaptchaLoadError] = useState('');
   const [recaptchaToken, setRecaptchaToken] = useState('');
   const [status, setStatus] = useState({ type: '', message: '' });
   const [submitting, setSubmitting] = useState(false);
@@ -39,11 +40,21 @@ export default function ContactForm() {
       return;
     }
 
-    widgetIdRef.current = window.grecaptcha.render(recaptchaRef.current, {
-      sitekey: siteKey,
-      callback: (token) => setRecaptchaToken(token),
-      'expired-callback': () => setRecaptchaToken(''),
-      'error-callback': () => setRecaptchaToken(''),
+    window.grecaptcha.ready(() => {
+      if (!recaptchaRef.current || widgetIdRef.current !== null) return;
+
+      widgetIdRef.current = window.grecaptcha.render(recaptchaRef.current, {
+        sitekey: siteKey,
+        callback: (token) => {
+          setCaptchaLoadError('');
+          setRecaptchaToken(token);
+        },
+        'expired-callback': () => setRecaptchaToken(''),
+        'error-callback': () => {
+          setRecaptchaToken('');
+          setCaptchaLoadError('CAPTCHA could not be verified. Please refresh and try again.');
+        },
+      });
     });
   }, [siteKey]);
 
@@ -71,6 +82,18 @@ export default function ContactForm() {
   useEffect(() => {
     renderRecaptcha();
   }, [renderRecaptcha]);
+
+  useEffect(() => {
+    if (!siteKey || recaptchaToken || widgetIdRef.current !== null) return undefined;
+
+    const timeout = setTimeout(() => {
+      if (widgetIdRef.current === null) {
+        setCaptchaLoadError('CAPTCHA could not load. Please refresh the page or disable browser blockers for this site.');
+      }
+    }, 6000);
+
+    return () => clearTimeout(timeout);
+  }, [siteKey, recaptchaToken]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -181,8 +204,18 @@ export default function ContactForm() {
           </div>
         ) : siteKey ? (
           <>
-            <Script src="https://www.google.com/recaptcha/api.js?render=explicit" strategy="afterInteractive" onLoad={renderRecaptcha} />
+            <Script
+              src="https://www.google.com/recaptcha/api.js?render=explicit"
+              strategy="afterInteractive"
+              onLoad={renderRecaptcha}
+              onError={() => setCaptchaLoadError('CAPTCHA script could not load. Please refresh the page or disable browser blockers for this site.')}
+            />
             <div ref={recaptchaRef} />
+            {captchaLoadError && (
+              <div className="mt-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+                {captchaLoadError}
+              </div>
+            )}
           </>
         ) : (
           <div className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
