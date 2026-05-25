@@ -34,7 +34,7 @@ function validatePayload(body) {
     phone: cleanText(body.phone, 40),
     service: cleanText(body.service, 80),
     message: cleanText(body.message, 2000),
-    recaptchaToken: cleanText(body.recaptchaToken, 2000),
+    recaptchaToken: cleanText(body.recaptchaToken, 10000),
     website: cleanText(body.website, 200),
   };
 
