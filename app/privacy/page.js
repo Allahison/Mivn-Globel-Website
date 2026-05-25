@@ -25,11 +25,17 @@ export default function PrivacyPolicy() {
     <>
       <Navbar />
       <main>
-        <section className="bg-gray-50 py-16 border-b border-gray-100">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-blue-600 text-xs font-bold uppercase tracking-[0.3em] mb-3">Legal</p>
-            <h1 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-4">Privacy Policy</h1>
-            <p className="text-gray-500 text-base">Last updated: January 2026</p>
+        <section className="bg-gray-950 text-white py-20 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-5 pointer-events-none">
+            <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-blue-500 rounded-full blur-3xl" />
+          </div>
+          <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-blue-400 text-xs font-bold uppercase tracking-[0.3em] mb-4">Legal</p>
+            <h1 className="text-4xl md:text-6xl font-black leading-none mb-4 tracking-tight">
+              PRIVACY
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">POLICY.</span>
+            </h1>
+            <p className="text-gray-400 text-sm mt-4">Last updated: January 2026</p>
           </div>
         </section>
         <section className="bg-white py-16">
