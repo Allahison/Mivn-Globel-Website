@@ -11,14 +11,17 @@ export default function AnimatedCounter({ value, duration = 1800 }) {
     if (!el) return;
 
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setDisplay(value);
-      return;
+      const timeout = setTimeout(() => setDisplay(value), 0);
+      return () => clearTimeout(timeout);
+    }
+
+    const match = value.match(/^([\d.]+)([^0-9.]*)$/);
+    if (!match) {
+      const timeout = setTimeout(() => setDisplay(value), 0);
+      return () => clearTimeout(timeout);
     }
 
     // Parse e.g. "200+", "98%", "5+"
-    const match = value.match(/^([\d.]+)([^0-9.]*)$/);
-    if (!match) { setDisplay(value); return; }
-
     const num = parseFloat(match[1]);
     const suffix = match[2];
     const isDecimal = match[1].includes(".");

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
+import ContactForm from '@/components/ContactForm';
 
 export const metadata = {
   title: "Contact Us — Mivan Global Ltd",
@@ -119,50 +120,7 @@ export default function Contact() {
               <div className="bg-white rounded-2xl p-10 shadow-sm border border-gray-100">
                 <p className="text-blue-600 text-xs font-bold uppercase tracking-[0.3em] mb-2">Send an Enquiry</p>
                 <h2 className="text-3xl font-black text-gray-900 mb-8 leading-tight">TELL US ABOUT<br />YOUR BUSINESS.</h2>
-                <form className="space-y-5">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    <div>
-                      <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2">Full Name</label>
-                      <input type="text" placeholder="Your Full Name" className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" />
-                    </div>
-                    <div>
-                      <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2">Business / Company</label>
-                      <input type="text" placeholder="Your Company Name" className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" />
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    <div>
-                      <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2">Email Address</label>
-                      <input type="email" placeholder="your@email.com" className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" />
-                    </div>
-                    <div>
-                      <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2">Phone / WhatsApp</label>
-                      <input type="tel" placeholder="+44 or 07..." className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2">What Do You Need Help With?</label>
-                    <select className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition bg-white">
-                      <option value="">Select a service...</option>
-                      <option>CRM &amp; Automation</option>
-                      <option>AI Agents &amp; Personal Assistants</option>
-                      <option>E-commerce Operations</option>
-                      <option>Custom Software Development</option>
-                      <option>Wholesale &amp; B2B Systems</option>
-                      <option>Dropshipping Inventory Network</option>
-                      <option>Website / Funnel</option>
-                      <option>Not Sure Yet</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2">Tell Us About Your Business</label>
-                    <textarea rows={5} placeholder="Describe your business, current workflow, and what problems you are looking to solve..." className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none" />
-                  </div>
-                  <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-black py-4 rounded-xl transition-all text-sm shadow-md uppercase tracking-wide">
-                    Send Enquiry
-                  </button>
-                  <p className="text-center text-gray-400 text-xs">We respond within 24 hours &middot; Monday &ndash; Saturday &middot; United Kingdom</p>
-                </form>
+                <ContactForm />
               </div>
             </ScrollReveal>
           </div>
