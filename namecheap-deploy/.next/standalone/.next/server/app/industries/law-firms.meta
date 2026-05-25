@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/industries/layout,_N_T_/industries/law-firms/layout,_N_T_/industries/law-firms/page,_N_T_/industries/law-firms"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/industries/law-firms/__PAGE__",
+    "/industries/law-firms",
+    "/industries",
+    "/_index",
+    "/_head"
+  ]
+}

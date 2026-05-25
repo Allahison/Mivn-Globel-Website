@@ -1,0 +1,3 @@
+module.exports=[12140,a=>{"use strict";a.s(["default",0,function({children:a}){return a},"metadata",0,{title:"FAQ — Frequently Asked Questions",description:"Find answers to common questions about Mivan Global Suite's services, implementation process, e-commerce management, and custom software development.",keywords:["FAQ","frequently asked questions","Mivan Global help","e-commerce questions","software development FAQ"],openGraph:{title:"FAQ — Mivan Global Suite",description:"Answers to common questions about our services and implementation process.",url:"https://mivn-globel-website.vercel.app/faq"}}])},63314,a=>{a.n(a.i(12140))}];
+
+//# sourceMappingURL=app_faq_layout_13qovwx.js.map

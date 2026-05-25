@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/industries/layout,_N_T_/industries/ecommerce-operators/layout,_N_T_/industries/ecommerce-operators/page,_N_T_/industries/ecommerce-operators"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/industries/ecommerce-operators/__PAGE__",
+    "/industries/ecommerce-operators",
+    "/industries",
+    "/_index",
+    "/_head"
+  ]
+}
