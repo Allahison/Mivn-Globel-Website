@@ -11,14 +11,14 @@ const BASE_URL = "https://mivn-globel-website.vercel.app";
 export const metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Mivan Global Suite — Digital Operations & Custom Software",
-    template: "%s | Mivan Global Suite",
+    default: "Mivan Global Ltd | CRM Automation, E-commerce Operations & Custom Software UK",
+    template: "%s | Mivan Global Ltd",
   },
-  description: "E-commerce operations management for Amazon, eBay & TikTok Shop. Custom software development, B2B portals, and digital solutions for law firms, wholesalers, and importers.",
-  keywords: ["e-commerce operations", "custom software development", "Amazon management", "eBay management", "TikTok Shop", "B2B portal", "law firm software", "wholesale management", "Mivan Global Suite"],
-  authors: [{ name: "Mivan Global Suite" }],
-  creator: "Mivan Global Suite",
-  publisher: "Mivan Global Ltd.",
+  description: "Mivan Global Ltd helps UK businesses automate CRM workflows, manage e-commerce operations, build custom software, create B2B portals, deploy AI agents, and connect wholesale inventory with dropshipping networks.",
+  keywords: ["CRM automation UK", "e-commerce operations", "custom software development", "AI agents UK", "B2B portal", "wholesale systems", "dropshipping inventory", "TikTok Shop management", "Amazon management", "eBay management", "Mivan Global Ltd"],
+  authors: [{ name: "Mivan Global Ltd" }],
+  creator: "Mivan Global Ltd",
+  publisher: "Mivan Global Ltd",
   robots: {
     index: true,
     follow: true,
@@ -32,15 +32,15 @@ export const metadata = {
     type: "website",
     locale: "en_GB",
     url: BASE_URL,
-    siteName: "Mivan Global Suite",
-    title: "Mivan Global Suite — Digital Operations & Custom Software",
-    description: "E-commerce operations management for Amazon, eBay & TikTok Shop. Custom software development and digital solutions for modern businesses.",
-    images: [{ url: "/logo.png", width: 1024, height: 1024, alt: "Mivan Global Suite" }],
+    siteName: "Mivan Global Ltd",
+    title: "Mivan Global Ltd | CRM Automation, E-commerce Operations & Custom Software UK",
+    description: "Mivan Global Ltd helps UK businesses automate CRM workflows, manage e-commerce, deploy AI agents, and build custom software.",
+    images: [{ url: "/logo.png", width: 1024, height: 1024, alt: "Mivan Global Ltd" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mivan Global Suite — Digital Operations & Custom Software",
-    description: "E-commerce operations management for Amazon, eBay & TikTok Shop. Custom software development and digital solutions for modern businesses.",
+    title: "Mivan Global Ltd | CRM Automation, E-commerce Operations & Custom Software UK",
+    description: "Mivan Global Ltd helps UK businesses connect sales, stock, customers, AI agents, and systems into smarter digital operations.",
     images: ["/logo.png"],
   },
 };
@@ -48,13 +48,14 @@ export const metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Mivan Global Suite",
+  name: "Mivan Global Ltd",
   url: BASE_URL,
   logo: `${BASE_URL}/logo.png`,
-  description: "E-commerce operations and custom software development for modern businesses.",
-  contactPoint: { "@type": "ContactPoint", contactType: "customer service", url: `${BASE_URL}/contact` },
+  description: "UK-based digital operations company helping businesses with CRM automation, AI agents, e-commerce operations, custom software, B2B portals, and dropshipping inventory networks.",
+  contactPoint: { "@type": "ContactPoint", contactType: "customer service", url: `${BASE_URL}/contact`, telephone: "+442046346212", email: "support@mivanglobal.co.uk" },
+  address: { "@type": "PostalAddress", addressCountry: "GB" },
   sameAs: ["https://linkedin.com", "https://youtube.com"],
-  services: ["E-commerce Operations", "Custom Software Development", "B2B Portals", "Digital Transformation"],
+  services: ["CRM Automation", "AI Agents", "E-commerce Operations", "Custom Software Development", "Wholesale & B2B Systems", "Dropshipping Inventory Network", "Websites & Funnels"],
 };
 
 export default function RootLayout({ children }) {

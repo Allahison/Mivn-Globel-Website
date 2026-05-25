@@ -9,18 +9,24 @@ const navItems = [
     label: 'Services',
     href: '/services',
     dropdown: [
+      { label: 'CRM & Automation', href: '/services/crm-automation' },
+      { label: 'AI Agents & Personal Assistants', href: '/services/ai-agents-personal-assistants' },
       { label: 'E-commerce Operations', href: '/services/ecommerce-operations' },
-      { label: 'Custom Development', href: '/services/custom-development' },
+      { label: 'Custom Software Development', href: '/services/custom-development' },
+      { label: 'Wholesale & B2B Systems', href: '/services/wholesale-b2b-systems' },
+      { label: 'Dropshipping Inventory Network', href: '/services/dropshipping-inventory-network' },
+      { label: 'Websites & Funnels', href: '/services/websites-funnels' },
     ],
   },
   {
     label: 'Industries',
     href: '/industries',
     dropdown: [
-      { label: 'Law Firms', href: '/industries/law-firms' },
       { label: 'Wholesale & Importers', href: '/industries/wholesale-importers' },
       { label: 'E-commerce Operators', href: '/industries/ecommerce-operators' },
+      { label: 'Law Firms', href: '/industries/law-firms' },
       { label: 'Mobile Phone Importers', href: '/industries/mobile-phone-importers' },
+      { label: 'Service Businesses', href: '/industries/service-businesses' },
     ],
   },
   { label: 'Case Studies', href: '/case-studies' },
@@ -36,7 +42,7 @@ const navItems = [
 
 function DropdownMenu({ items }) {
   return (
-    <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden z-50 animate-fadeIn">
+    <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden z-50 animate-fadeIn">
       {items.map((item) => (
         <Link
           key={item.href}
@@ -138,7 +144,7 @@ export default function Navbar() {
                 Mivan Global
               </span>
               <span className={`text-xs font-semibold tracking-widest uppercase transition-colors duration-300 ${transparent ? 'text-blue-300' : 'text-blue-600'}`}>
-                Suite
+                Ltd
               </span>
             </div>
           </Link>
@@ -160,7 +166,7 @@ export default function Navbar() {
                   : 'bg-blue-600 hover:bg-blue-700 text-white shadow-md'
               }`}
             >
-              Get Started
+              Book Free Consultation
             </Link>
           </div>
 
@@ -187,7 +193,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-4 pb-4">
+        <div className="md:hidden bg-white border-t border-gray-100 px-4 pb-4 max-h-[80vh] overflow-y-auto">
           {navItems.map((item) => (
             <div key={item.label} className="py-1">
               {item.dropdown ? (
@@ -235,7 +241,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen(false)}
             className="block mt-3 bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg text-center"
           >
-            Get Started
+            Book Free Consultation
           </Link>
         </div>
       )}

@@ -6,36 +6,29 @@ import CTASection from '@/components/CTASection';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: "E-commerce Operations Management — Amazon, eBay & TikTok Shop",
-  description: "Complete management of Amazon, eBay & TikTok Shop. Listing optimisation, real-time inventory sync, customer support, dispatch performance, and strategic promotions.",
-  keywords: ["Amazon management", "eBay management", "TikTok Shop management", "e-commerce operations", "marketplace management", "listing optimisation", "inventory sync"],
-  openGraph: { title: "E-commerce Operations Management — Mivan Global Suite", description: "Complete Amazon, eBay & TikTok Shop management. We handle everything so you can scale.", url: "https://mivn-globel-website.vercel.app/services/ecommerce-operations" },
+  title: "E-commerce Operations Management UK | Mivan Global Ltd",
+  description: "Mivan Global Ltd helps e-commerce businesses manage multi-channel operations across TikTok Shop, eBay, Amazon, and WooCommerce — with stock sync, dispatch workflows, customer support, and profit reporting.",
+  keywords: ["e-commerce operations UK", "marketplace management", "TikTok Shop operations", "eBay management", "multi-channel stock sync", "Mivan Global Ltd"],
+  openGraph: { title: "E-commerce Operations — Mivan Global Ltd", description: "Sell across more channels without losing control. E-commerce operations for UK online sellers.", url: "https://mivn-globel-website.vercel.app/services/ecommerce-operations" },
 };
 
 const highlights = [
-  { num: '01', title: 'LISTING OPTIMISATION', desc: 'We create high-converting product pages with SEO-friendly titles, bullet points, and professional imagery ensuring maximum visibility across all channels.' },
-  { num: '02', title: 'STOCK & DISPATCH SYNC', desc: 'Advanced logic prevents overselling and ensures 100% accurate dispatch performance to protect your account health and feedback score.' },
-  { num: '03', title: 'STRATEGIC PROMOTIONS', desc: 'We plan and execute deals, vouchers, and bundle offers strategically to drive volume during peak trading periods like Black Friday.' },
-  { num: '04', title: 'UNIFIED SUPPORT', desc: 'Centralised dashboards for customer messaging and returns handling allow us to drastically reduce response times and improve customer satisfaction.' },
+  { num: '01', title: 'LISTING MANAGEMENT', desc: 'Product listings created, maintained, and optimised across platforms with consistent titles, descriptions, and pricing.' },
+  { num: '02', title: 'STOCK SYNC', desc: 'Real-time stock synchronisation across all your sales channels — preventing overselling and keeping inventory accurate.' },
+  { num: '03', title: 'DISPATCH WORKFLOWS', desc: 'Structured dispatch processes that keep fulfilment fast, accurate, and consistent as order volumes grow.' },
+  { num: '04', title: 'PROFIT REPORTING', desc: 'Clear reporting on which channels, products, and promotions are generating profit — not just revenue.' },
 ];
 
 const operations = [
-  { tag: 'GROWTH', tagColor: 'bg-green-100 text-green-700', title: 'Listing Optimisation', desc: 'We create high-converting product pages with SEO-friendly titles, bullet points, and enhanced imagery to ensure maximum visibility on Amazon and eBay.', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=75' },
-  { tag: 'OPERATIONS', tagColor: 'bg-blue-100 text-blue-700', title: 'Inventory Sync Logic', desc: 'Real-time stock synchronisation across all your channels (TikTok, Amazon, eBay) to prevent overselling and eliminate manual stock checks.', image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=75' },
-  { tag: 'EFFICIENCY', tagColor: 'bg-purple-100 text-purple-700', title: 'Customer Support', desc: 'Unified support workflows that route messages from all platforms into one inbox, prioritising urgent queries to reduce response times.', image: 'https://images.unsplash.com/photo-1553775282-20af80779df7?w=600&q=75' },
-  { tag: 'COMPLIANCE', tagColor: 'bg-red-100 text-red-700', title: 'Performance Protection', desc: 'We strictly monitor dispatch performance and policy compliance to prevent "Late Dispatch" rates and protect your seller privileges.', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=75' },
-  { tag: 'STRATEGY', tagColor: 'bg-orange-100 text-orange-700', title: 'Strategic Promotions', desc: 'We plan and execute lightning deals, vouchers, and multi-buy offers strategically to drive volume during peak trading periods.', image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=75' },
-  { tag: 'INSIGHTS', tagColor: 'bg-teal-100 text-teal-700', title: 'Data & Reporting', desc: 'Clear, consolidated reporting on profit, loss, and channel performance, giving you total visibility without the need for spreadsheets.', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=75' },
+  { tag: 'LISTINGS', tagColor: 'bg-blue-100 text-blue-700', title: 'Listing Management', desc: 'Product listings created and maintained across TikTok Shop, eBay, Amazon, and WooCommerce with consistent information and pricing.', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=75' },
+  { tag: 'STOCK', tagColor: 'bg-teal-100 text-teal-700', title: 'Stock Sync Across Channels', desc: 'Real-time inventory synchronisation across all your marketplaces — preventing overselling and eliminating manual stock checks.', image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=75' },
+  { tag: 'SUPPORT', tagColor: 'bg-orange-100 text-orange-700', title: 'Customer Support Workflows', desc: 'Structured response workflows, templates, and message management that keep response times fast and ratings protected.', image: 'https://images.unsplash.com/photo-1553775282-20af80779df7?w=600&q=75' },
+  { tag: 'DISPATCH', tagColor: 'bg-green-100 text-green-700', title: 'Dispatch & Fulfilment', desc: 'Organised dispatch workflows that reduce errors, speed up packing, and keep your late dispatch rate low.', image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=75' },
+  { tag: 'PROMOTIONS', tagColor: 'bg-violet-100 text-violet-700', title: 'Promotions & Deals', desc: 'Planning and executing deals, vouchers, and bundle offers to drive volume during peak periods without cutting margins blindly.', image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=75' },
+  { tag: 'REPORTING', tagColor: 'bg-cyan-100 text-cyan-700', title: 'Profit & Channel Reporting', desc: 'Consolidated reporting on sales, costs, and profit across all channels — so you know what is actually working.', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=75' },
 ];
 
-const advantages = [
-  { icon: '🌐', title: 'MULTI-CHANNEL STRATEGY', subtitle: "We don't just maintain your current sales; we actively identify gaps in the market to expand your footprint.", points: ['Competitor Analysis & Tracking', 'New Marketplace Launches (eBay/TikTok)', 'Trend Forecasting'] },
-  { icon: '⚙️', title: 'AUTOMATED SYSTEMS', subtitle: 'We replace fragile spreadsheets with robust, API-connected workflows that eliminate human error.', points: ['Real-time API Integrations', 'Automated Stock Buffers', 'Zero Manual Data Entry'] },
-  { icon: '🛡️', title: 'RISK MITIGATION', subtitle: 'Your account health is your biggest asset. We proactively monitor metrics to prevent suspensions before they happen.', points: ['Policy Compliance Checks', 'Late Dispatch Prevention', 'Negative Feedback Removal'] },
-  { icon: '💰', title: 'COST EFFICIENCY', subtitle: 'Scale your order volume significantly without needing to hire more administrative staff.', points: ['Reduced Overhead Costs', 'Streamlined Dispatch Flows', 'Higher Profit Margins'] },
-];
-
-const platforms = ['Shopify', 'WooCommerce', 'Amazon', 'Daraz', 'eBay', 'Noon', 'TikTok Shop'];
+const platforms = ['TikTok Shop', 'eBay', 'Amazon', 'WooCommerce', 'Shopify', 'Etsy'];
 
 export default function EcommerceOperations() {
   return (
@@ -43,39 +36,42 @@ export default function EcommerceOperations() {
       <Navbar />
       <main>
 
-        {/* ── HERO ── Split */}
+        {/* ── HERO ── */}
         <section className="relative bg-gray-950 text-white overflow-hidden">
           <div className="absolute inset-0">
-            <Image src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=60" alt="" fill sizes="100vw" className="object-cover opacity-55" />
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-950/75 via-gray-950/55 to-gray-950/20" />
+            <Image src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=60" alt="" fill sizes="100vw" className="object-cover opacity-40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-gray-950/70 to-gray-950/40" />
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[85vh] items-center gap-12 py-20">
               <div>
-                <p className="hero-anim-1 text-blue-400 text-xs font-bold uppercase tracking-[0.3em] mb-4">E-commerce Operations · Complete Management</p>
+                <p className="hero-anim-1 text-blue-400 text-xs font-bold uppercase tracking-[0.3em] mb-4">E-commerce Operations &middot; Mivan Global Ltd</p>
                 <h1 className="hero-anim-2 text-5xl md:text-6xl xl:text-7xl font-black leading-none mb-6 tracking-tight">
-                  DOMINATE EVERY
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">MARKETPLACE.</span>
+                  SELL ACROSS MORE CHANNELS
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">WITHOUT LOSING CONTROL.</span>
                 </h1>
                 <p className="hero-anim-3 text-gray-400 text-lg leading-relaxed max-w-xl mb-10">
-                  We handle the complex operations of selling on Amazon, eBay, TikTok Shop. From listing
-                  optimisation to real-time stock synchronisation, we ensure your business scales without the manual headaches.
+                  We help online sellers manage the operational side of multi-channel e-commerce — stock sync, dispatch
+                  workflows, customer support, and profit reporting across TikTok Shop, eBay, Amazon, and WooCommerce.
+                </p>
+                <p className="hero-anim-3 text-gray-500 text-sm leading-relaxed max-w-xl mb-10">
+                  If you buy stock from a wholesaler, we can also connect you to their live inventory through the
+                  dropshipping network — removing the need to hold stock yourself.
                 </p>
                 <div className="hero-anim-4 flex flex-wrap gap-4">
-                  <Link href="/contact" className="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl text-sm transition-all shadow-lg shadow-blue-600/20">Get Started Today</Link>
-                  <Link href="/case-studies" className="border border-white/20 hover:border-white/50 text-white font-semibold px-8 py-4 rounded-xl text-sm transition-all">View Case Studies</Link>
+                  <Link href="/contact" className="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl text-sm transition-all shadow-lg shadow-blue-600/20">Streamline My Operations</Link>
+                  <Link href="/contact" className="border border-white/20 hover:border-white/50 text-white font-semibold px-8 py-4 rounded-xl text-sm transition-all">Book a Free Consultation</Link>
                 </div>
               </div>
               <div className="hero-anim-img relative hidden lg:block">
                 <div className="relative rounded-2xl overflow-hidden h-[560px] shadow-2xl">
                   <Image src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=85" alt="E-commerce marketplace operations" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" priority />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-950/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-5 py-4">
-                    <div className="text-white font-black text-xl">Amazon · eBay · TikTok</div>
-                    <div className="text-gray-300 text-xs font-semibold uppercase tracking-widest mt-1">All Channels Managed</div>
+                  <div className="absolute bottom-6 left-6 bg-blue-600/90 backdrop-blur-md border border-blue-500/30 rounded-xl px-5 py-4">
+                    <div className="text-white font-black text-xl">Multi-Channel Operations</div>
+                    <div className="text-blue-200 text-xs font-semibold uppercase tracking-widest mt-1">Stock · Dispatch · Support · Profit</div>
                   </div>
                 </div>
-                <div className="absolute -bottom-8 -right-8 w-56 h-56 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
               </div>
             </div>
           </div>
@@ -98,12 +94,12 @@ export default function EcommerceOperations() {
           </div>
         </section>
 
-        {/* ── OPERATIONAL EXCELLENCE ── Cards with images */}
+        {/* ── OPERATIONS ── */}
         <section className="bg-white py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="mb-14">
-              <p className="text-blue-600 text-xs font-bold uppercase tracking-[0.3em] mb-3">Operational Excellence</p>
-              <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight">EVERYTHING WE<span className="block">HANDLE FOR YOU.</span></h2>
+              <p className="text-blue-600 text-xs font-bold uppercase tracking-[0.3em] mb-3">What We Handle</p>
+              <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight">EVERYTHING WE<span className="block">MANAGE FOR YOU.</span></h2>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
               {operations.map((op, i) => (
@@ -117,9 +113,6 @@ export default function EcommerceOperations() {
                     <div className="p-7 flex flex-col flex-1">
                       <h3 className="text-gray-900 font-black text-xl mb-2 group-hover:text-blue-600 transition-colors">{op.title}</h3>
                       <p className="text-gray-500 text-sm leading-relaxed flex-1">{op.desc}</p>
-                      <button className="mt-5 text-blue-600 text-xs font-bold uppercase tracking-widest flex items-center gap-1.5 hover:gap-3 transition-all duration-200 w-fit">
-                        Learn More <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" /></svg>
-                      </button>
                     </div>
                   </div>
                 </ScrollReveal>
@@ -140,48 +133,14 @@ export default function EcommerceOperations() {
           </div>
         </section>
 
-        {/* ── MIVAN ADVANTAGE ── */}
-        <section className="bg-gray-50 py-24 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 pointer-events-none">
-            <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-blue-500 rounded-full blur-3xl" />
-          </div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div>
-                <p className="text-blue-600 text-xs font-bold uppercase tracking-[0.3em] mb-3">The Mivan Advantage</p>
-                <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-4">SCALABLE INFRASTRUCTURE<span className="block text-gray-500">FOR MODERN SELLERS.</span></h2>
-                <p className="text-gray-600 text-lg mb-8">Stop worrying about account health and manual data entry. We build the systems that allow you to sleep at night while your store keeps selling.</p>
-                <Link href="/contact" className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl text-sm transition-all shadow-lg shadow-blue-600/20">Get a Free Consultation</Link>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                {advantages.map((adv, i) => (
-                  <ScrollReveal key={adv.title} delay={i * 100}>
-                    <div className="border border-gray-200 rounded-2xl p-6 hover:border-blue-300 hover:bg-gray-50 transition-all duration-300 group h-full">
-                      <div className="text-2xl mb-4">{adv.icon}</div>
-                      <h3 className="text-gray-900 font-black text-sm uppercase tracking-wider mb-2 group-hover:text-blue-600 transition-colors">{adv.title}</h3>
-                      <p className="text-gray-500 text-xs leading-relaxed mb-4">{adv.subtitle}</p>
-                      <ul className="space-y-1.5">
-                        {adv.points.map((pt) => (
-                          <li key={pt} className="flex items-center gap-2 text-xs text-gray-600">
-                            <div className="w-1 h-1 rounded-full bg-blue-500 flex-shrink-0" />{pt}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </ScrollReveal>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
         <CTASection
-          heading="READY TO SCALE WITHOUT THE HEADACHES?"
-          desc="Let our team take over your marketplace operations and drive real, measurable growth."
-          primaryLabel="Get a Free Consultation"
+          eyebrow="Ready to Scale?"
+          heading="SELL MORE ACROSS MORE CHANNELS."
+          desc="Let's review your current operations and build the workflows, stock control, and reporting your e-commerce business needs to grow."
+          primaryLabel="Streamline My Operations"
           primaryHref="/contact"
-          secondaryLabel="See Our Results"
-          secondaryHref="/case-studies"
+          secondaryLabel="Book a Free Consultation"
+          secondaryHref="/contact"
           accent="blue"
         />
 

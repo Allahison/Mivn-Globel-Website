@@ -6,33 +6,33 @@ import CTASection from '@/components/CTASection';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: "Custom Software Development — B2B Portals & Mobile Apps",
-  description: "Bespoke B2B ordering portals, inventory management systems, warranty platforms, business dashboards, and staff mobile apps built around your exact workflow.",
-  keywords: ["custom software development", "B2B portal development", "inventory management system", "mobile app development", "business dashboard", "custom ERP"],
-  openGraph: { title: "Custom Software Development — Mivan Global Suite", description: "Bespoke B2B portals, inventory systems, and mobile apps built for your exact workflow.", url: "https://mivn-globel-website.vercel.app/services/custom-development" },
+  title: "Custom Software Development UK | Mivan Global Ltd",
+  description: "Mivan Global Ltd builds bespoke B2B portals, inventory systems, warranty platforms, business dashboards, and staff tools — software designed around how your business actually works.",
+  keywords: ["custom software development UK", "B2B portal development", "inventory management system", "business dashboard", "custom system UK", "Mivan Global Ltd"],
+  openGraph: { title: "Custom Software Development — Mivan Global Ltd", description: "Software built around how your business actually works. Bespoke portals, systems, and dashboards.", url: "https://mivn-globel-website.vercel.app/services/custom-development" },
 };
 
 const steps = [
-  { num: '01', title: 'DISCOVERY & ARCHITECTURE', desc: 'We start by auditing your current friction points to create a technical specification. We define exactly what needs to be built to solve your specific business problem.' },
-  { num: '02', title: 'AGILE DEVELOPMENT', desc: 'Our team builds your custom portal or app in 2-week sprints. This gives you regular visibility on progress and allows us to adapt features quickly if your needs change.' },
-  { num: '03', title: 'INTEGRATION & LAUNCH', desc: "We don't just write code; we connect it. We integrate your new software with your existing stack (ERP, Xero, Shopify, or WMS) to ensure data flows seamlessly." },
-  { num: '04', title: 'SUPPORT & SCALING', desc: 'Software isn\'t "finished" at launch. We provide ongoing server management, bug fixes, and feature updates to ensure your system scales as your company grows.' },
+  { num: '01', title: 'DISCOVERY & SCOPING', desc: 'We map your current workflow, identify where things break down, and define exactly what needs to be built to solve the actual problem.' },
+  { num: '02', title: 'DESIGN & BUILD', desc: 'We build your system in stages with regular check-ins so you can see progress, give feedback, and adjust as needed before full delivery.' },
+  { num: '03', title: 'INTEGRATION & LAUNCH', desc: 'We connect your new system to the tools you already use — whether that is accounting software, e-commerce platforms, or existing databases.' },
+  { num: '04', title: 'SUPPORT & UPDATES', desc: 'We stay involved after launch to fix issues, add features, and make sure the system keeps working as your business grows and changes.' },
 ];
 
 const solutions = [
-  { tag: 'SALES', tagColor: 'bg-green-100 text-green-700', title: 'B2B Ordering Portals', desc: 'Self-service portals that allow your wholesale clients to view live stock, place orders, and download invoices 24/7 without calling you.', image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=75' },
-  { tag: 'LOGISTICS', tagColor: 'bg-blue-100 text-blue-700', title: 'Inventory & WMS', desc: 'Custom warehouse management tools that track stock movements, manage bin locations, and streamline picking/packing workflows.', image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=75' },
-  { tag: 'SUPPORT', tagColor: 'bg-purple-100 text-purple-700', title: 'Warranty Platforms', desc: 'Automated returns management systems that let customers book repairs, track status, and receive updates, reducing support calls.', image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=75' },
-  { tag: 'DATA', tagColor: 'bg-teal-100 text-teal-700', title: 'Business Dashboards', desc: 'Unified dashboards that pull data from Xero, Shopify, and your ERP to give you a real-time view of profit, loss, and cash flow.', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=75' },
-  { tag: 'CONNECTIVITY', tagColor: 'bg-orange-100 text-orange-700', title: 'System Integrations', desc: 'We build bridges between your disconnected software (e.g., connecting your website to your accounting software) to eliminate manual data entry.', image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=75' },
-  { tag: 'MOBILE', tagColor: 'bg-red-100 text-red-700', title: 'Staff Mobile Apps', desc: 'Native mobile apps for your field staff or warehouse team to scan barcodes, take photos, and update jobs on the go.', image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=75' },
+  { tag: 'B2B', tagColor: 'bg-green-100 text-green-700', title: 'B2B Ordering Portals', desc: 'Self-service portals that allow your wholesale customers to view live stock, place orders, and download invoices without contacting your team.', image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=75' },
+  { tag: 'INVENTORY', tagColor: 'bg-blue-100 text-blue-700', title: 'Inventory Systems', desc: 'Custom stock management tools that track products, movements, and locations in a way that fits your actual warehouse or storage setup.', image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=75' },
+  { tag: 'WARRANTY', tagColor: 'bg-violet-100 text-violet-700', title: 'Warranty & Repair Platforms', desc: 'Systems for managing warranty claims, repair requests, and returns — with status tracking and customer communication built in.', image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=75' },
+  { tag: 'REPORTING', tagColor: 'bg-teal-100 text-teal-700', title: 'Business Dashboards', desc: 'Reporting dashboards that pull data from your existing tools and present it clearly — stock, orders, revenue, and key metrics in one view.', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=75' },
+  { tag: 'INTEGRATION', tagColor: 'bg-orange-100 text-orange-700', title: 'System Integrations', desc: 'Connections between tools that do not talk to each other — linking your website, accounting software, marketplace, or CRM to reduce manual data entry.', image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=75' },
+  { tag: 'TOOLS', tagColor: 'bg-red-100 text-red-700', title: 'Staff & Internal Tools', desc: 'Simple apps and tools built for your team — whether for scanning stock, updating job status, or managing tasks in the field.', image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=75' },
 ];
 
-const operatingSystems = [
-  { icon: '🧠', title: 'Custom Operating Systems', desc: "We build proprietary, end-to-end operating systems tailored to your exact business logic, bypassing the limits of off-the-shelf software.", points: ['Full IP ownership', '"Source of Truth" centralization', 'Architected for 10x scaling'] },
-  { icon: '🔗', title: 'Connectivity', desc: 'Seamlessly deploy the Mivan Global Suite alongside your custom builds, ensuring marketing, sales, and operations sync in real-time.', points: ['Deep ERP & POS integration', 'Automated cross-department workflows', 'Unified customer profiles'] },
-  { icon: '🏗️', title: 'Enterprise-Grade Architecture', desc: 'Resilient cloud architecture built to handle complex B2B inventory, strict compliance, and massive transaction volumes without failure.', points: ['Bank-grade security', 'Zero-downtime deployment', 'High-volume data handling'] },
-  { icon: '📊', title: "The Operator's Dashboard", desc: '"Command Center" dashboards that provide a real-time, consultant-level view of cash flow, inventory velocity, and funnel health.', points: ['Real-time P&L visualization', 'Role-specific KPI tracking', 'Executive decision data'] },
+const principles = [
+  { icon: '🎯', title: 'Built Around Your Workflow', desc: 'We do not apply a generic template. We design the system around how your business actually operates, not around what is easiest to build.', points: ['Custom logic for your process', 'No unnecessary features', 'Fits how your team works'] },
+  { icon: '🔗', title: 'Connected to Your Tools', desc: 'We build systems that work alongside the tools you already use — connecting data rather than replacing everything at once.', points: ['Accounting & invoicing integration', 'E-commerce platform connection', 'API-based data sync'] },
+  { icon: '📊', title: 'Clear Reporting', desc: 'Every system we build includes reporting so you can see what is happening — without needing to export data into spreadsheets manually.', points: ['Real-time dashboards', 'Role-based access', 'Exportable reports'] },
+  { icon: '🛠️', title: 'Ongoing Support', desc: 'We stay involved after launch. If something needs fixing or a new feature is needed as your business grows, we are available to help.', points: ['Post-launch maintenance', 'Feature updates', 'System monitoring'] },
 ];
 
 export default function CustomDevelopment() {
@@ -44,20 +44,20 @@ export default function CustomDevelopment() {
         {/* ── HERO ── */}
         <section className="relative bg-gray-950 text-white overflow-hidden">
           <div className="absolute inset-0">
-            <Image src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1600&q=60" alt="" fill sizes="100vw" className="object-cover opacity-55" />
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-950/75 via-gray-950/55 to-gray-950/20" />
+            <Image src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1600&q=60" alt="" fill sizes="100vw" className="object-cover opacity-40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-gray-950/70 to-gray-950/40" />
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[85vh] items-center gap-12 py-20">
               <div>
-                <p className="hero-anim-1 text-violet-400 text-xs font-bold uppercase tracking-[0.3em] mb-4">Custom Development · End-to-End Delivery</p>
+                <p className="hero-anim-1 text-violet-400 text-xs font-bold uppercase tracking-[0.3em] mb-4">Custom Development &middot; Mivan Global Ltd</p>
                 <h1 className="hero-anim-2 text-5xl md:text-6xl xl:text-7xl font-black leading-none mb-6 tracking-tight">
-                  SOFTWARE BUILT FOR
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-400">YOUR WORKFLOW.</span>
+                  SOFTWARE BUILT AROUND
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-400">HOW YOUR BUSINESS WORKS.</span>
                 </h1>
                 <p className="hero-anim-3 text-gray-400 text-lg leading-relaxed max-w-xl mb-10">
-                  Off-the-shelf software rarely fits perfectly. We design and build custom B2B portals,
-                  inventory systems, and mobile apps that map exactly to your unique operational workflows.
+                  Off-the-shelf software rarely fits perfectly. We design and build custom B2B portals, inventory systems,
+                  warranty platforms, and business dashboards that match your actual operational workflow.
                 </p>
                 <div className="hero-anim-4 flex flex-wrap gap-4">
                   <Link href="/contact" className="bg-violet-600 hover:bg-violet-500 text-white font-bold px-8 py-4 rounded-xl text-sm transition-all shadow-lg shadow-violet-600/20">Discuss Your Project</Link>
@@ -66,11 +66,11 @@ export default function CustomDevelopment() {
               </div>
               <div className="hero-anim-img relative hidden lg:block">
                 <div className="relative rounded-2xl overflow-hidden h-[560px] shadow-2xl">
-                  <Image src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=85" alt="Custom software development and coding" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" priority />
+                  <Image src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=85" alt="Custom software development" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" priority />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-950/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-5 py-4">
-                    <div className="text-white font-black text-xl">2-Week Sprints</div>
-                    <div className="text-gray-300 text-xs font-semibold uppercase tracking-widest mt-1">Agile Delivery Process</div>
+                  <div className="absolute bottom-6 left-6 bg-violet-600/90 backdrop-blur-md border border-violet-500/30 rounded-xl px-5 py-4">
+                    <div className="text-white font-black text-xl">Built for Your Business</div>
+                    <div className="text-violet-200 text-xs font-semibold uppercase tracking-widest mt-1">Not a Generic Template</div>
                   </div>
                 </div>
                 <div className="absolute -bottom-8 -right-8 w-56 h-56 bg-violet-600/10 rounded-full blur-3xl pointer-events-none" />
@@ -96,11 +96,11 @@ export default function CustomDevelopment() {
           </div>
         </section>
 
-        {/* ── BESPOKE SOLUTIONS ── */}
+        {/* ── SOFTWARE WE BUILD ── */}
         <section className="bg-white py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="mb-14">
-              <p className="text-violet-600 text-xs font-bold uppercase tracking-[0.3em] mb-3">Bespoke Solutions</p>
+              <p className="text-violet-600 text-xs font-bold uppercase tracking-[0.3em] mb-3">What We Build</p>
               <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight">SOFTWARE WE BUILD.</h2>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
@@ -115,9 +115,6 @@ export default function CustomDevelopment() {
                     <div className="p-7 flex flex-col flex-1">
                       <h3 className="text-gray-900 font-black text-xl mb-2 group-hover:text-violet-600 transition-colors">{sol.title}</h3>
                       <p className="text-gray-500 text-sm leading-relaxed flex-1">{sol.desc}</p>
-                      <button className="mt-5 text-violet-600 text-xs font-bold uppercase tracking-widest flex items-center gap-1.5 hover:gap-3 transition-all duration-200 w-fit">
-                        View Details <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" /></svg>
-                      </button>
                     </div>
                   </div>
                 </ScrollReveal>
@@ -126,7 +123,7 @@ export default function CustomDevelopment() {
           </div>
         </section>
 
-        {/* ── OPERATING SYSTEMS FOR GROWTH ── */}
+        {/* ── HOW WE WORK ── */}
         <section className="bg-gray-50 py-24 relative overflow-hidden">
           <div className="absolute inset-0 opacity-5 pointer-events-none">
             <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-violet-500 rounded-full blur-3xl" />
@@ -135,20 +132,20 @@ export default function CustomDevelopment() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <ScrollReveal>
-                  <p className="text-violet-600 text-xs font-bold uppercase tracking-[0.3em] mb-3">End-to-End Operating Systems</p>
-                  <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-4">OPERATING SYSTEMS<span className="block text-gray-500">FOR GROWTH.</span></h2>
-                  <p className="text-gray-600 text-lg mb-8">We don&apos;t just build software; we engineer the &quot;central nervous system&quot; of your business.</p>
+                  <p className="text-violet-600 text-xs font-bold uppercase tracking-[0.3em] mb-3">How We Approach It</p>
+                  <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-4">PRINCIPLES WE BUILD<span className="block text-gray-500">EVERY SYSTEM AROUND.</span></h2>
+                  <p className="text-gray-600 text-lg mb-8">Every system we build starts with understanding your workflow first — not proposing a solution before we understand the problem.</p>
                 </ScrollReveal>
                 <div className="grid grid-cols-1 gap-5">
-                  {operatingSystems.map((os, i) => (
-                    <ScrollReveal key={os.title} delay={i * 100}>
-                      <div className="border border-gray-200 rounded-2xl p-6 hover:border-violet-300 hover:bg-gray-50 transition-all duration-300 group flex gap-4">
-                        <div className="text-2xl flex-shrink-0">{os.icon}</div>
+                  {principles.map((p, i) => (
+                    <ScrollReveal key={p.title} delay={i * 100}>
+                      <div className="border border-gray-200 rounded-2xl p-6 hover:border-violet-300 hover:bg-white transition-all duration-300 group flex gap-4">
+                        <div className="text-2xl flex-shrink-0">{p.icon}</div>
                         <div>
-                          <h3 className="text-gray-900 font-black text-base mb-1 group-hover:text-violet-600 transition-colors">{os.title}</h3>
-                          <p className="text-gray-500 text-xs leading-relaxed mb-3">{os.desc}</p>
-                          <div className="flex flex-wrap gap-2">
-                            {os.points.map((pt) => (
+                          <h3 className="text-gray-900 font-black text-base mb-1 group-hover:text-violet-600 transition-colors">{p.title}</h3>
+                          <p className="text-gray-500 text-xs leading-relaxed mb-3">{p.desc}</p>
+                          <div className="flex flex-wrap gap-x-4 gap-y-1">
+                            {p.points.map((pt) => (
                               <span key={pt} className="text-[10px] text-gray-600 flex items-center gap-1">
                                 <span className="w-1 h-1 rounded-full bg-violet-500 inline-block" />{pt}
                               </span>
@@ -160,13 +157,13 @@ export default function CustomDevelopment() {
                   ))}
                 </div>
               </div>
-              <ScrollReveal direction="right" className="relative hidden lg:block">
+              <ScrollReveal className="relative hidden lg:block">
                 <div className="relative rounded-2xl overflow-hidden h-[600px] shadow-2xl">
-                  <Image src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&q=85" alt="Enterprise software development" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+                  <Image src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&q=85" alt="Software development process" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-transparent to-transparent" />
                   <div className="absolute bottom-6 left-6 bg-violet-600/90 backdrop-blur-md rounded-xl px-5 py-4 border border-violet-500/30">
                     <div className="text-white font-black text-sm uppercase tracking-widest">Full IP Ownership</div>
-                    <div className="text-violet-200 text-xs mt-1">Your code, your asset</div>
+                    <div className="text-violet-200 text-xs mt-1">Your system, your asset</div>
                   </div>
                 </div>
               </ScrollReveal>
@@ -175,11 +172,11 @@ export default function CustomDevelopment() {
         </section>
 
         <CTASection
-          heading="HAVE A PROJECT IN MIND?"
-          desc="Tell us about your workflow challenge. We'll design the exact system to solve it."
-          primaryLabel="Start the Conversation"
+          heading="HAVE A WORKFLOW PROBLEM WE CAN SOLVE?"
+          desc="Tell us what is not working in your current process. We will design a system that fixes it — without unnecessary complexity."
+          primaryLabel="Discuss Your Project"
           primaryHref="/contact"
-          secondaryLabel="See Our Work"
+          secondaryLabel="View Case Studies"
           secondaryHref="/case-studies"
           accent="violet"
         />
