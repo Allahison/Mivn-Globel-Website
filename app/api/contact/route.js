@@ -65,7 +65,32 @@ async function verifyRecaptcha(token) {
     body: new URLSearchParams({ secret, response: token }),
   });
   const data = await response.json();
-  return Boolean(data.success);
+  return data;
+}
+
+function getRecaptchaFailureMessage(result) {
+  const errorCodes = result?.['error-codes'] || [];
+  console.warn('reCAPTCHA verification failed:', errorCodes);
+
+  if (errorCodes.includes('timeout-or-duplicate')) {
+    return 'CAPTCHA expired. Please tick the CAPTCHA again and resubmit.';
+  }
+
+  if (
+    errorCodes.includes('missing-input-secret') ||
+    errorCodes.includes('invalid-input-secret')
+  ) {
+    return 'CAPTCHA server configuration is invalid. Please check the reCAPTCHA secret key.';
+  }
+
+  if (
+    errorCodes.includes('missing-input-response') ||
+    errorCodes.includes('invalid-input-response')
+  ) {
+    return 'CAPTCHA could not be verified. Please refresh the page and try again.';
+  }
+
+  return 'CAPTCHA verification failed. Please try again.';
 }
 
 function getTransporter() {
@@ -148,9 +173,9 @@ export async function POST(request) {
       return Response.json({ message: errors[0], errors }, { status: 400 });
     }
 
-    const captchaValid = await verifyRecaptcha(enquiry.recaptchaToken);
-    if (!captchaValid) {
-      return Response.json({ message: 'CAPTCHA verification failed. Please try again.' }, { status: 400 });
+    const captchaResult = await verifyRecaptcha(enquiry.recaptchaToken);
+    if (!captchaResult.success) {
+      return Response.json({ message: getRecaptchaFailureMessage(captchaResult) }, { status: 400 });
     }
 
     const transporter = getTransporter();
