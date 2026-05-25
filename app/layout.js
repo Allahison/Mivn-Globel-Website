@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import MouseFollower from "@/components/MouseFollower";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen flex flex-col bg-white antialiased">
         <MouseFollower />
         {children}
+        <CookieConsent />
         <Script
           src="https://widgets.leadconnectorhq.com/loader.js"
           data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"

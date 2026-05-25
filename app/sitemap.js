@@ -13,5 +13,7 @@ export default function sitemap() {
     { url: `${BASE_URL}/industries/wholesale-importers`,      lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/industries/ecommerce-operators`,      lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/industries/mobile-phone-importers`,   lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/privacy`,                             lastModified: new Date(), changeFrequency: "yearly",  priority: 0.4 },
+    { url: `${BASE_URL}/terms`,                               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.4 },
   ];
 }
